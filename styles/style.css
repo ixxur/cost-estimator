@@ -115,6 +115,7 @@ h1 {
   text-transform: uppercase;
   margin: 16px 0;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 .container .sessions-card p {
   color: var(--color-font);
@@ -236,4 +237,31 @@ h1 {
 .container .card-wrapper .card button:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 750px) {
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+  .card-wrapper .card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  body {
+    padding: 16px;
+  }
+  h1 {
+    margin: 0 0 16px 0;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .container .toggle-wrapper {
+    width: 90%;
+    justify-content: center;
+  }
+  .container .sessions-card {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
